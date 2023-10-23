@@ -12,3 +12,8 @@ Try these urls in the browser:
     http://localhost:8080/actuator/metrics/jvm.memory.used
     http://localhost:8080/actuator/loggers
     http://localhost:8080/actuator/configprops
+
+05.
+To check custom metric,
+1. send GET request to: localhost:8080/api/v1/sample
+2. check the custom metric: localhost:8080/actuator/metrics/long.running.service.timer
