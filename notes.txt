@@ -1,3 +1,14 @@
 01.
 Please note that the Spring Boot Actuator has already been added to the project
 
+02.
+In the application.properties
+management.endpoints.web.include=<value>
+value could be the comma-separated list of endpoint ids or *
+* is considered to be a security risk
+Try these urls in the browser:
+    http://localhost:8080/actuator/health
+    http://localhost:8080/actuator/metrics
+    http://localhost:8080/actuator/metrics/jvm.memory.used
+    http://localhost:8080/actuator/loggers
+    http://localhost:8080/actuator/configprops
